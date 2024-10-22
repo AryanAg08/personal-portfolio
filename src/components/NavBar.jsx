@@ -23,7 +23,7 @@ export class NavBar extends Component {
                   <Nav.Link href="#projects">Projects</Nav.Link>
                 </Nav>
                 <Nav className='ml-auto'> 
-                <Nav.Link href="mailto:goyalaryan51@gmail.com">
+                <Nav.Link href="mailto:goyalaryan5@gmail.com">
                 <EmailRoundedIcon style={{ fontSize: 20 }}></EmailRoundedIcon>
               </Nav.Link>
               <Nav.Link href="https://github.com/AryanAg08" target="_blank">

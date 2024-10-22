@@ -1,11 +1,11 @@
 html {
   scroll-behavior: smooth;
-  background-color: #CDB4DB;
+  /* background-color: #CDB4DB; */
 }
 
-body {
+/* body {
   background-color: #CDB4DB;
-}
+} */
 /* Animation */
 
 .fade-in-section {
@@ -42,6 +42,7 @@ a {
   width: 100vw;
   overflow-x: hidden;
   overflow-y: hidden;
+ 
 }
 .rs-steps-horizontal .rs-steps-item-content {
   text-align: left;
@@ -96,6 +97,7 @@ a {
   #content {
     padding: 10px 10px;
     width: 100%;
+    margin-top: 15%;
   }
 
   .section-header {

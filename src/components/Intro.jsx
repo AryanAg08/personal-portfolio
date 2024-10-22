@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import "../styles/Intro.css";
 import Typist from 'react-typist';
 import EmailRounded from '@mui/icons-material/EmailRounded';
-import DescriptionRoundedIcon from '@mui/icons-material/DescriptionRounded';import { green } from '@mui/material/colors';
+import DescriptionRoundedIcon from '@mui/icons-material/DescriptionRounded';
 import FadeInSection from './FadeInSection';
-import { Fade } from 'react-bootstrap';
 
 
 export class Intro extends Component {
