@@ -74,7 +74,7 @@ class Projects extends React.Component {
         link: "https://github.com/AryanAg08/Discord-Package-npm",
 //        open: "https://github.com/AryanAg08/Discord-Package-npm"
       },
-      "Quip [Ongoing]": {
+      "Quip": {
         desc:
           "A Platform made for student to study together and stay productive.",
         techStack: "Node.js (Express.js), React.js, MongoDB, ChakraUI",

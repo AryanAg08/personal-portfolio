@@ -97,7 +97,7 @@
   .carousel img {
     object-fit: contain;
     height: 100%;
-    opacity: 0.5;
+    opacity: 0.8;
   }
   
   .carousel-caption {
