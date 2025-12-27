@@ -22,14 +22,55 @@ class Projects extends React.Component {
   }
   render() {
     const spotlightProjects = {
-      "Loginfy": {
-        title: "Loginfy-Auth",
+        "Aegis": {
+       title: "Aegis Mail ",
         desc:
-          "A NPM package completely focused on simplifying Authentication & let's you customise more freely.",
-        techStack: "JAVASCRIPT (NODE.JS)",
-        link: "https://github.com/AryanAg08/Loginfy",
-        open: "https://www.npmjs.com/package/loginfy-auth",
-        image: "/loginfy.png"
+          "A Platform made for filtering out spam mails and keep you safe.",
+        techStack: "Node.js (Express.js), React.js, MongoDB, GmailAPI, FastAPI for ML interface",
+        link: "https://github.com/AryanAg08/Aegis",
+        open: "https://github.com/AryanAg08/Aegis",
+        image: "/Aegis.png"
+      },
+       "CodeZen": {
+       title: "CodeZen: An Online coding platform",
+        desc:
+          "A web-based coding platform supporting 5+ programming languages online compiler.",
+        techStack: "Node.js (Express.js), React.js, MongoDB, GenAI, Docker",
+        link: "https://github.com/AryanAg08/CodeZen-",
+        open: "https://codezen.aryangoyal.space",
+        image: "/CodeZen.png"
+      },
+       "Quip": {
+       title: "Quip: A Collaborative Platform",
+       desc:
+          "A Platform made for student to study together and stay productive.",
+        techStack: "Node.js (Express.js), React.js, MongoDB, ChakraUI, WebRTC",
+        link: "https://github.com/AryanAg08/Quip-Study-Together",
+        open: "https://github.com/AryanAg08/Quip-Study-Together",
+        image: "/Quip.png"
+      },
+      "Bus Ticket": {
+       title: "Real Time Bus Ticket Service",
+        desc:
+          "A Platform for Real Time Bus Ticket Service showcase.",
+        techStack: "Node.js (Express.js), React.js, PostgreSQL, Redis, Docker, Websockets, SendGrid",
+        link: "https://github.com/AryanAg08/Bus-ticket-app",
+        open: "https://busticket.aryangoyal.space/",
+        image: "/BusTicket.png"
+      }
+    };
+    const projects = {
+      "Splitwise": {
+        desc:
+          "A backend application of Splitwise for group transactions.",
+        techStack: "GOLang, Gin, MongoDB, RabbitMQ, Redis",
+        link: "https://github.com/AryanAg08/Simplified-Splitwise",
+      },
+       "Catalog-Logger": {
+        desc:
+          "An application created for storing and verifying catalogs.",
+        techStack: "Node.Js (Express.js), React.js, TailwindCSS, MongoDB",
+        link: "https://github.com/AryanAg08/catalog-logger",
       },
       "Study Discord Bot": {
         title: "Friendly Bot",
@@ -37,50 +78,21 @@ class Projects extends React.Component {
           "Engineered a custom Discord bot designed for educational purposes, enabling seamless interaction among users.",
         techStack: "JAVASCRIPT (DISCORD.JS)",
         link: "https://github.com/AryanAg08/Friendly_Bot-V13.6",
-        open: "https://discord.com/invite/study-vibes-703937875720273972",
-        image: "/friendly_bot.png"
       },
-      Eventify: {
+       "Loginfy": {
+        title: "Loginfy-Auth",
+        desc:
+          "A NPM package completely focused on simplifying Authentication & let's you customise more freely.",
+        techStack: "JAVASCRIPT (NODE.JS)",
+        link: "https://github.com/AryanAg08/Loginfy",
+      },
+      "Eventify": {
         title: "Event Ticket Generator and Validator",
         desc:
           "A Microservice based Platform for Validation and Generating Event Tickets.",
         techStack: "NODE.JS (EXPRESS.JS), REACT.JS, MONGODB",
         link: "https://github.com/AryanAg08/JSCOP-6.0-BACKEND",
-        open: "https://ticker-validator-2a31f8f74db7.herokuapp.com/user",
-        image: "/Eventify.png"
-      // },
-      // Portfolio: {
-      //   title: "portfolio.js",
-      //   desc:
-      //     "A small JS library that helps with clear and succinct data presentation.",
-      //   techStack: "NODE.JS (EXPRESS.JS)",
-      //   link: "https://github.com/gazijarin/Portfolio.js",
-      //   open: "https://afternoon-ocean-92382.herokuapp.com/",
-      //   image: "/assets/portfolio.png"
-      }
-    };
-    const projects = {
-      "Catalog-Logger": {
-        desc:
-          "An application created for storing and verifying catalogs.",
-        techStack: "Node.Js (Express.js), React.js, TailwindCSS, MongoDB",
-        link: "https://github.com/AryanAg08/catalog-logger",
-  //      open: "https://github.com/AryanAg08/catalog-logger"
-      },
-      "DiscordJs Based NPM Script": {
-        desc:
-          "A NPM script to ease the discord bot making process.",
-        techStack: "Javascript, Discord.js",
-        link: "https://github.com/AryanAg08/Discord-Package-npm",
-//        open: "https://github.com/AryanAg08/Discord-Package-npm"
-      },
-      "Quip": {
-        desc:
-          "A Platform made for student to study together and stay productive.",
-        techStack: "Node.js (Express.js), React.js, MongoDB, ChakraUI",
-        link:
-          "https://github.com/AryanAg08/Quip-Study-Together"
-      }
+       }
     };
 
     return (

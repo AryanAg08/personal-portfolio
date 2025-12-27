@@ -19,10 +19,10 @@ class About extends React.Component {
   render() {
     const one = (
       <p>
-        I am currently a <b>Pre-Final Year Student</b> of Computer Science and a
-        <a href="https://www.aboutamazon.com/"> Full Stack developer </a>. 
-        At the same time, I am   
-        <b> Technical Head </b> of <b>JIIT Optica Chapter. </b>
+        I am currently a <b>Final Year Student</b> of Computer Science and a
+        <b> Full Stack developer </b>. 
+        {/* At the same time, I am   
+        <b> Technical Head </b> of <b>JIIT Optica Chapter. </b> */}
       </p>
     );
     const two = (
@@ -37,9 +37,12 @@ class About extends React.Component {
       "Node.js",
       "Javascript",
       "MongoDB",
-      "Cpp",
+      "C++",
       "TypeScript",
-      "Github"
+      "Github",
+      "Redis",
+      "Docker",
+      "GO Lang"
     ];
 
     return (

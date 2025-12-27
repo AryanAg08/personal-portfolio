@@ -49,7 +49,7 @@ handleSelect(eventKey) {
             {" Say hi!"}
           </a>
           <a
-          href="http://resume.aryangoyal.live"
+          href="https://drive.google.com/file/d/10sK-YpsGcYtCG4U2O8QloCz06ExEvtqe/view?usp=sharing"
           className='intro-resume'
           >
          <DescriptionRoundedIcon>   </DescriptionRoundedIcon>

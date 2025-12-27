@@ -16,7 +16,7 @@ function App() {
       <div id="content">
         <Intro></Intro>
         <About></About>
-        {/* <Experience></Experience> */}
+        <Experience></Experience>
         <Projects></Projects>
         <Credits></Credits>
       </div>
