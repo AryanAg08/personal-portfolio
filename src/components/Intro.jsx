@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import "../styles/Intro.css";
-// import Typist from 'react-typist';
 import EmailRounded from '@mui/icons-material/EmailRounded';
 import DescriptionRoundedIcon from '@mui/icons-material/DescriptionRounded';
 import FadeInSection from './FadeInSection';
