@@ -1,0 +1,176 @@
+#terminal {
+  margin: auto;
+  max-width: 1000px;
+  padding-top: 100px;
+}
+
+.terminal-window {
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(100, 255, 218, 0.04);
+  cursor: text;
+  font-family: var(--font-mono);
+}
+
+.terminal-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background-color: var(--bg-alt);
+  border-bottom: 1px solid var(--line);
+}
+
+.terminal-bar .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.terminal-bar .dot.red {
+  background-color: #ff5f56;
+}
+.terminal-bar .dot.yellow {
+  background-color: #ffbd2e;
+}
+.terminal-bar .dot.green {
+  background-color: #27c93f;
+}
+.terminal-title {
+  margin-left: 10px;
+  font-size: 12px;
+  color: var(--slate);
+  letter-spacing: 0.02em;
+}
+
+.terminal-body {
+  padding: 20px 22px;
+  height: 420px;
+  overflow-y: auto;
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: var(--body-text);
+  scroll-behavior: smooth;
+}
+
+/* scrollbar */
+.terminal-body::-webkit-scrollbar {
+  width: 8px;
+}
+.terminal-body::-webkit-scrollbar-thumb {
+  background: var(--surface-2);
+  border-radius: 8px;
+}
+
+.terminal-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.terminal-prompt {
+  color: var(--accent);
+  white-space: nowrap;
+  user-select: none;
+}
+
+.terminal-echo {
+  color: var(--heading);
+  word-break: break-word;
+}
+
+.terminal-out {
+  padding: 2px 0 12px;
+  color: var(--body-text);
+}
+
+.terminal-out a,
+.terminal-body a {
+  color: var(--accent) !important;
+  text-decoration: none !important;
+  border-bottom: 1px dashed rgba(100, 255, 218, 0.4);
+}
+.terminal-out a:hover {
+  border-bottom-color: var(--accent);
+}
+
+.terminal-input {
+  flex: 1;
+  min-width: 60px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--heading);
+  font-family: var(--font-mono);
+  font-size: 14.5px;
+  caret-color: var(--accent);
+  padding: 0;
+}
+
+/* blinking caret hint when empty is handled by native caret */
+.terminal-active .terminal-prompt {
+  animation: none;
+}
+
+/* ---- helper text styles used inside command output ---- */
+.t-accent {
+  color: var(--accent);
+}
+.t-dim {
+  color: var(--slate);
+  opacity: 0.8;
+}
+.t-cmd {
+  color: var(--accent-soft);
+  font-weight: 500;
+}
+.t-warn {
+  color: #ff7b72;
+}
+.t-key {
+  color: var(--accent-soft);
+  white-space: pre;
+}
+.t-indent {
+  padding-left: 14px;
+  color: var(--slate);
+}
+.t-line {
+  margin-bottom: 6px;
+}
+.t-art {
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.t-grid {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  row-gap: 2px;
+  column-gap: 10px;
+  margin: 4px 0 10px;
+}
+.t-grid .t-cmd {
+  color: var(--accent);
+}
+
+@media only screen and (max-width: 600px) {
+  #terminal {
+    padding-left: unset;
+    padding-right: unset;
+  }
+  .terminal-body {
+    height: 340px;
+    font-size: 13px;
+  }
+  .t-grid {
+    grid-template-columns: 110px 1fr;
+  }
+}

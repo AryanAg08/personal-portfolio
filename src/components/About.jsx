@@ -19,10 +19,20 @@ class About extends React.Component {
   render() {
     const one = (
       <p>
-        I am currently a <b>Final Year Student</b> of Computer Science and a
-        <b> Full Stack developer </b>. 
-        {/* At the same time, I am   
+        I'm a Computer Science <b>graduate</b> and a full-time
+        <b> Software Developer at GrexaAI</b>. I enjoy building backend systems
+        and cloud-native platforms — lately I've been focused on <b>Go</b>,
+        microservices and Kubernetes.
+        {/* At the same time, I am
         <b> Technical Head </b> of <b>JIIT Optica Chapter. </b> */}
+      </p>
+    );
+    const buildingNow = (
+      <p>
+        Right now I'm building <b>LogSense</b>, a microservices platform for auth
+        and AI-powered features deployed on Kubernetes, and <b>A.R.Y.A.</b>, an
+        autonomous personal assistant that turns everyday notes into diary,
+        finance and nutrition insights.
       </p>
     );
     const two = (
@@ -42,7 +52,9 @@ class About extends React.Component {
       "Github",
       "Redis",
       "Docker",
-      "GO Lang"
+      "GO Lang",
+      "Kubernetes",
+      "RabbitMQ"
     ];
 
     return (
@@ -64,6 +76,7 @@ class About extends React.Component {
                   );
                 })}
               </ul>
+              {[buildingNow]}
               {[two]}
             </div>
             <div className="about-image">

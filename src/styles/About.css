@@ -32,10 +32,11 @@
   }
   
   .about-description {
-    font-family: "NTR", sans-serif;
+    font-family: var(--font-sans);
     color: var(--slate);
     max-width: 600px;
-    font-size: 22px;
+    font-size: 19px;
+    line-height: 1.65;
     text-align: justify;
     margin: 0;
   }

@@ -1,15 +1,44 @@
+:root {
+  /* ---- Developer dark palette ---- */
+  --bg: #0d1117; /* page background (deep ink) */
+  --bg-alt: #0f1420;
+  --surface: #161b22; /* elevated cards */
+  --surface-2: #1c2230;
+  --border: #262d3a;
+  --accent: #64ffda; /* vibrant aqua accent */
+  --accent-2: #7c9cff; /* secondary electric indigo */
+  --accent-tint: rgba(100, 255, 218, 0.1);
+  --heading: #e6edf3;
+  --body-text: #97a3b6;
+
+  /* ---- Mapped onto the existing variable names used across the app ---- */
+  --navy: var(--bg); /* page background */
+  --light-navy: var(--surface); /* card surface */
+  --lightest-navy: var(--surface-2); /* hover / hairlines / selection */
+  --slate: var(--body-text); /* body text */
+  --lightest-slate: var(--heading); /* headings */
+  --green-bright: var(--accent); /* accent */
+  --accent-soft: var(--accent-2);
+  --line: var(--border);
+
+  /* ---- Typography ---- */
+  --font-serif: "Space Grotesk", "Inter", sans-serif; /* display/headings */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Helvetica Neue", sans-serif;
+  --font-mono: "JetBrains Mono", source-code-pro, Menlo, Monaco, Consolas,
+    "Courier New", monospace;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
-  /* background-color: #CDB4DB; */
+  background-color: var(--bg);
+  color: var(--body-text);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: var(--font-mono);
 }
