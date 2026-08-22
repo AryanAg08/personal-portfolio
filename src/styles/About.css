@@ -9,7 +9,7 @@
     padding-top: 20px;
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(2, minmax(150px, 10px));
+    grid-template-columns: repeat(3, minmax(120px, 1fr));
   }
   
   .about-description li {

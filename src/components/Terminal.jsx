@@ -66,7 +66,7 @@ const COMMANDS = {
     <div>
       <div>
         <span className="t-accent">GrexaAI</span> — SDE{" "}
-        <span className="t-dim">(Jun 2025 – present)</span>
+        <span className="t-dim">(Jun 2026 – present)</span>
       </div>
       <div className="t-indent">
         Backend microservices for a B2B CRM + comms platform; owns the AI Chat
@@ -74,7 +74,7 @@ const COMMANDS = {
       </div>
       <div>
         <span className="t-accent">GrexaAI</span> — SDE Intern{" "}
-        <span className="t-dim">(Jan 2025 – Jun 2025)</span>
+        <span className="t-dim">(Jan 2026 – Jun 2026)</span>
       </div>
       <div className="t-indent">
         Built LLM conversation flows, agent tools, workers & cron jobs in Go.
