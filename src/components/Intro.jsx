@@ -4,6 +4,8 @@ import EmailRounded from '@mui/icons-material/EmailRounded';
 import DescriptionRoundedIcon from '@mui/icons-material/DescriptionRounded';
 import FadeInSection from './FadeInSection';
 import Typewriter from 'typewriter-effect';
+import { openResume } from './ResumeViewer';
+import { openSayHi } from './SayHi';
 
 
 
@@ -51,20 +53,22 @@ export class Intro extends Component {
             I'm a Full-Stack Developer. Fascinated with large-scale products and
             new emerging technologies. Ping me if you wanna talk more about technologies!!
           </div>
-          <a
-            href="mailto:goyalaryan51@gmail.com"
+          <button
+            type="button"
+            onClick={openSayHi}
             className="intro-contact"
           >
             <EmailRounded></EmailRounded>
             {" Say hi!"}
-          </a>
-          <a
-            href="https://drive.google.com/file/d/10sK-YpsGcYtCG4U2O8QloCz06ExEvtqe/view?usp=sharing"
+          </button>
+          <button
+            type="button"
+            onClick={openResume}
             className='intro-resume'
           >
             <DescriptionRoundedIcon>   </DescriptionRoundedIcon>
             {" Resume! "}
-          </a>
+          </button>
         </FadeInSection>
       </div>
     )

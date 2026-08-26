@@ -60,6 +60,7 @@
     letter-spacing: 0.04em;
     font-weight: 500;
     color: var(--accent);
+    background: transparent;
     align-self: center;
     padding: 13px 30px;
     cursor: pointer;
@@ -81,6 +82,7 @@
     letter-spacing: 0.04em;
     font-weight: 500;
     color: var(--slate);
+    background: transparent;
     align-self: center;
     padding: 13px 30px;
     margin-left: 10px;

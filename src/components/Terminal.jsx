@@ -156,12 +156,8 @@ const COMMANDS = {
     </div>
   ),
   resume: () => {
-    window.open(
-      "https://drive.google.com/file/d/10sK-YpsGcYtCG4U2O8QloCz06ExEvtqe/view?usp=sharing",
-      "_blank",
-      "noopener"
-    );
-    return <div className="t-dim">Opening resume in a new tab… 📄</div>;
+    window.dispatchEvent(new Event("open-resume"));
+    return <div className="t-dim">Opening resume viewer… 📄</div>;
   },
 
   // ---- hidden / easter eggs ----

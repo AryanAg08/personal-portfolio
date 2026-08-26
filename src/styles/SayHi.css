@@ -1,0 +1,133 @@
+.sh-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  background: rgba(2, 6, 14, 0.78);
+  backdrop-filter: blur(4px);
+  animation: sh-fade 0.18s ease;
+}
+
+@keyframes sh-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.sh-window {
+  display: flex;
+  flex-direction: column;
+  width: min(680px, 100%);
+  height: min(70vh, 560px);
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(100, 255, 218, 0.04);
+  font-family: var(--font-mono);
+  animation: sh-pop 0.2s ease;
+}
+
+@keyframes sh-pop {
+  from { opacity: 0; transform: translateY(12px) scale(0.99); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.sh-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background-color: var(--bg-alt);
+  border-bottom: 1px solid var(--line);
+}
+
+.sh-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.sh-dot.red { background-color: #ff5f56; cursor: pointer; }
+.sh-dot.yellow { background-color: #ffbd2e; }
+.sh-dot.green { background-color: #27c93f; }
+
+.sh-title {
+  margin-left: 10px;
+  font-size: 12px;
+  color: var(--slate);
+  letter-spacing: 0.02em;
+}
+
+.sh-body {
+  flex: 1;
+  min-height: 0;
+  padding: 20px 22px;
+  overflow-y: auto;
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: var(--body-text);
+  scroll-behavior: smooth;
+  cursor: text;
+}
+
+.sh-body::-webkit-scrollbar { width: 8px; }
+.sh-body::-webkit-scrollbar-thumb {
+  background: var(--surface-2);
+  border-radius: 8px;
+}
+
+.sh-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.sh-prompt {
+  color: var(--accent);
+  white-space: nowrap;
+  user-select: none;
+}
+
+.sh-echo {
+  color: var(--heading);
+  word-break: break-word;
+}
+
+.sh-out {
+  padding: 2px 0 8px;
+  color: var(--body-text);
+  word-break: break-word;
+}
+
+.sh-sys { color: var(--slate); }
+.sh-ok { color: var(--accent); }
+.sh-err { color: #ff7b72; }
+
+.sh-input {
+  flex: 1;
+  min-width: 60px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--heading);
+  font-family: var(--font-mono);
+  font-size: 14.5px;
+  caret-color: var(--accent);
+  padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .sh-overlay { padding: 0; }
+  .sh-window {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+  }
+  .sh-body { font-size: 13px; }
+}

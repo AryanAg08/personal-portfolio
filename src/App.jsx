@@ -7,6 +7,8 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Credits from "./components/Credits";
+import ResumeViewer from "./components/ResumeViewer";
+import SayHi from "./components/SayHi";
 import "rsuite/dist/rsuite.css";
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
         <Projects></Projects>
         <Credits></Credits>
       </div>
+      <ResumeViewer />
+      <SayHi />
     </div>
   )
 }

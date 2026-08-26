@@ -1,0 +1,121 @@
+.rv-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  background: rgba(2, 6, 14, 0.78);
+  backdrop-filter: blur(4px);
+  animation: rv-fade 0.18s ease;
+}
+
+@keyframes rv-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.rv-modal {
+  display: flex;
+  flex-direction: column;
+  width: min(900px, 100%);
+  height: min(92vh, 100%);
+  background: var(--bg-alt);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+  animation: rv-pop 0.2s ease;
+}
+
+@keyframes rv-pop {
+  from { opacity: 0; transform: translateY(12px) scale(0.99); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.rv-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--line);
+  background: var(--bg);
+}
+
+.rv-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--slate);
+}
+
+.rv-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent);
+}
+
+.rv-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rv-btn {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--slate);
+  padding: 7px 14px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+.rv-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-tint);
+}
+
+.rv-close {
+  padding: 7px 12px;
+  line-height: 1;
+}
+
+.rv-body {
+  flex: 1;
+  min-height: 0;
+  background: #525659; /* neutral pdf viewer backdrop */
+}
+
+.rv-frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .rv-overlay {
+    padding: 0;
+  }
+  .rv-modal {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+  }
+  .rv-btn {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+}
