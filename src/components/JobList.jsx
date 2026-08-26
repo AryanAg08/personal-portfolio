@@ -82,6 +82,24 @@ const JobList = () => {
   const [value, setValue] = React.useState(0);
 
   const experienceItems = {
+    GrexaAI: {
+      jobTitle: "Software Development Engineer @",
+      duration: "JUN 2026 - PRESENT",
+      desc: [
+        "Building backend microservices for grexa.ai, a B2B platform for CRM, communications and AI-powered chat agents, using Go, MongoDB, Redis, RabbitMQ and gRPC on Kubernetes.",
+        "Own the Chat Agent Service — AI-driven WhatsApp agents with LLM tool-calling (lead lookups, callbacks, campaign details, review links) and agent memory for context-aware conversations.",
+        "Implemented human-in-the-loop (HITL) support and conversation management so agents hand off to human operators seamlessly, integrating OpenAI, Anthropic and Gemini providers."
+      ]
+    },
+    "GrexaAI (Intern)": {
+      jobTitle: "SDE Intern @",
+      duration: "JAN 2026 - JUN 2026",
+      desc: [
+        "Started on the Chat Agent Service, developing LLM-integrated conversation flows and agent tools in Go for WhatsApp business messaging.",
+        "Built handlers, background workers and cron jobs to process conversations at scale, backed by RabbitMQ and Redis.",
+        "Added test coverage and hardened the reliability of the AI agent pipeline across multiple LLM providers."
+      ]
+    },
     Mentorsity: {
       jobTitle: "Backend Intern",
       duration: "JUN 2024 - OCT 2024",

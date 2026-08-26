@@ -22,8 +22,9 @@ html {
 }
 
 .App {
-  font-family: "NTR";
+  font-family: var(--font-sans);
   background-color: var(--navy);
+  color: var(--body-text);
   display: flex;
   margin: auto;
 }
@@ -82,10 +83,11 @@ a {
 }
 
 .section-title {
-  font-family: "NTR", sans-serif;
+  font-family: var(--font-serif);
   color: var(--lightest-slate);
   font-size: 46px;
-  font-weight: bold;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 @media only screen and (max-width: 600px) {

@@ -26,12 +26,17 @@
     height: 100%;
     padding: 2rem 1.75rem;
     background-color: var(--light-navy);
+    border: 1px solid var(--line);
     border-radius: 16px;
+    transition: transform 0.2s ease, background-color 0.25s ease,
+      box-shadow 0.25s ease;
   }
-  
+
   .projects-card:hover {
     transform: translateY(-7px);
-    background-color: var(--lightest-navy);
+    background-color: var(--surface-2);
+    border-color: var(--accent);
+    box-shadow: 0 14px 34px -14px rgba(0, 0, 0, 0.65);
   }
   
   .card-header {
@@ -58,23 +63,25 @@
   }
   
   .card-title {
-    font-family: "NTR", sans-serif;
+    font-family: var(--font-serif);
     color: var(--lightest-slate);
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 600;
   }
-  
+
   .card-desc {
-    font-family: "NTR", sans-serif;
-    color: var(--slate);
-    font-size: 18px;
-    padding-bottom: 40px;
-  }
-  
-  .card-tech {
-    font-family: "NTR", sans-serif;
+    font-family: var(--font-sans);
     color: var(--slate);
     font-size: 16px;
+    line-height: 1.6;
+    padding-bottom: 40px;
+  }
+
+  .card-tech {
+    font-family: var(--font-mono);
+    color: var(--green-bright);
+    font-size: 13px;
+    line-height: 1.5;
   }
   
   /* Spotlight carousel */
@@ -101,30 +108,31 @@
   }
   
   .carousel-caption {
-    font-family: "NTR", sans-serif;
+    font-family: var(--font-sans);
     max-width: 500px;
     right: unset !important;
     left: 25% !important;
     user-select: none;
   }
-  
+
   .carousel-caption h3 {
+    font-family: var(--font-serif);
     font-size: 38px;
-    font-weight: bold;
+    font-weight: 600;
     color: var(--lightest-slate);
   }
-  
+
   .carousel-caption p {
-    font-family: "NTR", sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    color: var(--lightest-slate);
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 17px;
+    color: var(--heading);
   }
-  
+
   .carousel-caption p.techStack {
-    font-family: "NTR", sans-serif;
-    font-size: 14px;
-    font-weight: bold;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 500;
     color: var(--green-bright);
   }
   

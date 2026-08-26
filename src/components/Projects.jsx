@@ -60,6 +60,21 @@ class Projects extends React.Component {
       }
     };
     const projects = {
+      "LogSense": {
+        title: "LogSense",
+        desc:
+          "A microservices platform for user management, auth, and AI-powered features — JWT auth with refresh tokens, async email workers, and Helm-based Kubernetes deployments.",
+        techStack: "GoLang, Gin, MongoDB, Redis, RabbitMQ, Kubernetes, Helm",
+        link: "https://github.com/AryanAg08/logSense-api",
+        open: "https://logsense.cloud",
+      },
+      "A.R.Y.A.": {
+        title: "A.R.Y.A.",
+        desc:
+          "Autonomous Routine & Yield Assistant — a personal AI companion that captures diary, finance & nutrition via NLP, runs morning/evening briefings, and tracks goals with streaks. Go API + Flutter app.",
+        techStack: "GoLang, Gin, MongoDB, Redis, RabbitMQ, Flutter, K3s, ArgoCD, OpenAI",
+        link: "https://github.com/AryanAg08/ARYA-api",
+      },
       "Splitwise": {
         desc:
           "A backend application of Splitwise for group transactions.",

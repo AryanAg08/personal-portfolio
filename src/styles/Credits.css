@@ -5,10 +5,11 @@
 }
 
 .ending-credits {
-  font-family: "NTR", sans-serif;
+  font-family: var(--font-mono);
   color: var(--slate);
   text-align: center;
   width: 100%;
-  font-size: 16px;
+  font-size: 13px;
+  letter-spacing: 0.02em;
   padding-bottom: 40px;
 }
